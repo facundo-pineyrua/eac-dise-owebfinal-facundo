@@ -10,7 +10,7 @@ function EquipoFavorito() {
       );
       const data = await response.json();
       const equipoFavorito = data.teams.find(
-        (equipo) => equipo.strTeam === "Racing"
+        (equipo) => equipo.strTeam === "Racing Montevideo"
       );
       console.log("data", data);
       console.log("equipoFavorito", equipoFavorito);

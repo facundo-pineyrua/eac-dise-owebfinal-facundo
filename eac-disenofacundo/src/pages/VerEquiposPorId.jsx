@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"; 
 
-function VerEquipoPorId() {
+
+function VerEquiposPorId() {
   const { id } = useParams(); 
   const [equipo, setEquipo] = useState(null); 
 
@@ -14,11 +15,9 @@ function VerEquipoPorId() {
       if (data.teams) {
         setEquipo(data.teams[0]); 
     }
-    obtenerEquipoPorId(); 
-} [id]);
-  if (!equipo) {
-    return null; 
   }
+    obtenerEquipoPorId(); 
+  }, []);
 
   return (
     <div>
@@ -31,4 +30,4 @@ function VerEquipoPorId() {
   );
 }
 
-export { VerEquipoPorId };
+export { VerEquiposPorId };
