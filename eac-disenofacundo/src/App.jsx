@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Equipo } from "./components/Equipo";
 
+
 function App() {
   const [count, setCount] = useState(0);
  <nav>

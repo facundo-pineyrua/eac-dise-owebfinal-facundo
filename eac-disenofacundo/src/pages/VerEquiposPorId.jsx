@@ -15,7 +15,7 @@ function VerEquipoPorId() {
         setEquipo(data.teams[0]); 
     }
     obtenerEquipoPorId(); 
-  } [id])
+} [id]);
   if (!equipo) {
     return null; 
   }
